@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Lush Blush</title>
+  <link rel="stylesheet" href="contact.css"/>
+  <link rel="icon" type="image/x-icon" href="makeup.jpg"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Lush Blush</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="how-to-use.html">How To Use</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-hero">
+    <div class="hero-text">
+      <h1>Contact Lush Blush</h1>
+      <p>Have a question or feedback? We're here to help and love hearing from you.</p>
+    </div>
+  </section>
+
+  <section class="contact-main">
+    <div class="contact-wrapper">
+
+      <!-- Contact Form -->
+      <div class="form-section">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" action="submit_form.php" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="products">Select Products</label>
+            <select id="products" name="products[]" multiple required>
+              <option value="Face Scrub">Face Scrub</option>
+              <option value="Primer">Primer</option>
+              <option value="Foundation">Foundation</option>
+              <option value="Concealer">Concealer</option>
+              <option value="Highlighter">Highlighter</option>
+              <option value="Eyeshadow">Eyeshadow</option>
+              <option value="Eyeliner">Eyeliner</option>
+              <option value="Setting Spray">Setting Spray</option>
+            </select>
+            <small>Hold Ctrl (Windows) or Command (Mac) to select multiple.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="e.g., 2" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="delivery">Preferred Delivery Method</label>
+            <select id="delivery" name="delivery" required>
+              <option value="Standard">Standard (3–5 Days)</option>
+              <option value="Express">Express (1–2 Days)</option>
+              <option value="Pickup">In-Store Pickup</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Any specific instructions? (optional)"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="info-section">
+        <h2>Contact Information</h2>
+      
+        <p><strong>Email:</strong> <a href="mailto:support@lushblush.com">support@lushblush.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+923001234567">+92 300 1234567</a></p>
+        <p><strong>Location:</strong> Gujrat, Pakistan</p>
+      
+        <h3>Need Assistance?</h3>
+        <p>Our dedicated customer care team is here to help you with your beauty needs, order inquiries, and product guidance. Whether it’s about choosing the right shade or checking your order status—we’ve got you!</p>
+      
+        <h3>Business Hours</h3>
+        <ul>
+          <li><strong>Monday – Friday:</strong> 9:00 AM – 6:00 PM</li>
+          <li><strong>Saturday:</strong> 10:00 AM – 4:00 PM</li>
+          <li><strong>Sunday:</strong> Closed</li>
+        </ul>
+      
+        <h3>Shipping Policy</h3>
+        <p>We currently deliver across Pakistan. Orders placed before 2 PM are processed the same day. Shipping is free for orders above PKR 2,000. Delivery options:</p>
+        <ul>
+          <li><strong>Standard:</strong> 3–5 business days</li>
+          <li><strong>Express:</strong> 1–2 business days</li>
+          <li><strong>Pickup:</strong> Available at select stores</li>
+        </ul>
+      
+        <h3>Payment Methods</h3>
+        <ul>
+          <li>Cash on Delivery (COD)</li>
+          <li>JazzCash / EasyPaisa</li>
+          <li>Debit & Credit Cards (Visa, MasterCard)</li>
+          <li>Bank Transfer (details available on checkout)</li>
+        </ul>
+      
+        <h3>Return & Refund</h3>
+        <p>At Lush Blush, we want you to be completely satisfied with your purchase. We accept returns within 30 days of receiving your order, provided the product is unused, unopened, and in its original packaging. Return shipping costs are the customer's responsibility unless the item is defective or incorrect. Once we receive the returned product and confirm it meets our return criteria, we will process a refund to the original payment method within 7-10 business days, excluding shipping fees. Please note that items such as opened cosmetics are not eligible for return due to health and safety regulations.</p>
+        </div>
+      
+
+</section>
+<footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h4>Lush Blush</h4>
+      <p style="color: rgb(161, 18, 89);">Where beauty meets elegance. Discover your glow with our premium range of cosmetics crafted for every skin tone.</p>
+    </div>
+
+    <div class="footer-links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="how-to-use.html">How To Use</a></li>
+        <li><a href="home.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h5>Contact Us</h5>
+      <p >Email: support@lushblush.com</p>
+      <p >Phone: +92 300 1234567</p>
+      <p >Location: Gujrat, Pakistan</p>
+    </div>
+
+    <div class="footer-social">
+      <h5>Follow Us</h5>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/trio_tales_003?igsh=MTNodXJpdHhvMDhzZw=="><img src="insta.jpg" alt="Instagram"></a>
+        <a href=""><img src="tiktok.png" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 <span>Lush Blush</span> — MADE BY ANI</p>
+  </div>
+</footer>
+  <script src="contact.js"></script>
+</body>
+</html>
